@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+    line-height: 1.5em;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+    margin: 20px;
+}
+h2{
+    font-weight: bold;
+    font-size: larger;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.left{
+    padding: 10px;
+    margin-right: 10px;
+    border-right: 1px solid black;
+    background-color: rgb(57, 58, 75);
+    color: white;
+}
+.left h2{
+    font-size: 2em;
+    margin: 0;
+}
+.left > *{
+    margin-left: 10px;
+}
+.left h3{
+    border-bottom: 1px solid #fff ;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+.info{
+    text-align: center;
+}
+img{
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.right{
+    padding: 10px;
+}
+.right > section > h3{
+    color: rgb(57, 58, 75);
+}
+.right h3{
+    margin-top: 0;
+    font-size: 1.5em;
+}
+.summary{
+    padding-top: 15px;
+}
+.job-title{
+    font-weight: bold;
+}
+.job-date{
+    font-style: italic;
+}
+li{
+    padding-bottom: 10px;
+}
+.things-done{
+    list-style: none;
+    padding: 0;
+}
+.skills-list{
+    list-style-type: none;
+    padding-left: 0;
+}
+.project-list{
+    list-style-type: none;
+    padding: 0;
+}
+.degree{
+    font-weight: 700;
+}
+@media (max-width: 568px) {
+    .container{
+        width: 95vw;
+        margin: unset;
+    }
+}
